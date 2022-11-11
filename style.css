@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/va9C4kDNxMZdWfMOD5VvkrjJYTI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/va9E4kDNxMZdWfMOD5Vvl4jL.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./fonts/va9B4kDNxMZdWfMOD5VnLK3eRhf6.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+:root {
+  --background-color: #282a36;
+  --header-color: #353746;
+  --text-color: #bcc2d7;
+  --text-color-highlight: #f7f5ff;
+  --text-color-fade: #9ca5c4;
+  --inverted-text-color: #fafafa;
+  --link-color: #49a4e4;
+  --red-shade: #cc6644;
+  --orange-shade: #c88e05;
+  --visited-link-color: #a68bfc;
+  --neutral-shade: #191a20;
+  --gamma-opacity: 0.75;
+  --gamma-opacity6: 0.8;
+  --link-code-background-color: rgba(68, 82, 255, 0.33);
+}
+
+body,
+html {
+  font-family: "fira sans", "trebuchet ms", roboto, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background: var(--background-color);
+
+  --neutral-shade: #aaaaaa;
+  --blue-shade: #001199;
+  --red-shade: #aa2200;
+  --dark-red-shade: #cc6644;
+  --green-shade: #00aa66;
+  --orange-shade: #fe7711;
+  --dark-orange-shade: #c88e05;
+  --brown-shade: #a0522d;
+  --cyan-shade: #0099ff;
+  --purple-shade: #8844ff;
+  --magenta-shade: #bb44ee;
+  --gamma-opacity: 0.5;
+  --gamma-opacity6: 0.66;
+  --link-code-background-color: rgba(170, 170, 170, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+header {
+  padding-top: 20px;
+  background: var(--header-color);
+}
+
+header p {
+  margin: 0;
+}
+
+.content-size {
+  padding: 0 1em;
+  margin: 0 auto;
+  max-width: 60em;
+  box-sizing: border-box;
+  max-width: 90em;
+}
+
+input {
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 1.6;
+  font-family: "fira sans ot", "fira sans", "trebuchet ms", roboto, sans-serif;
+}
+
+label {
+  cursor: pointer;
+  background: var(--purple-shade);
+  color: #f1deff;
+  text-shadow: 0 1px 0 #000;
+  border: 1px solid #000;
+  border-left-width: 0px;
+  padding: 1px 1ex;
+  font-size: 1.25em;
+  line-height: 1.6;
+  font-weight: 700;
+  text-shadow: 0 1px 0 #000;
+}
+
+input[type="submit"] {
+  display: none;
+}
+
+input[type="search"] {
+  border: solid 1px black;
+  border-right-width: 0;
+  font-size: 18px;
+  background: #464959;
+  color: #fcfcfd;
+  -webkit-appearance: none;
+  outline: 0;
+  padding: 1px 1ex;
+}
+
+#search {
+  white-space: nowrap;
+  margin: 1em 0 0;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+#search:hover > label {
+  color: white;
+}
+
+nav {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 14px;
+  background: var(--background-color);
+  text-align: center;
+  padding: 0.42em 1.9em 0.4em;
+}
+
+.cat {
+  list-style: none;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+a {
+  color: #49a4e4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cat .desc {
+  color: #bcc2d7;
+  display: inline;
+  margin-top: 0;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.cat li {
+  width: calc(100% / 1);
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 580px) {
+  .cat li {
+    width: calc(100% / 2);
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .cat li {
+    width: calc(100% / 3);
+    padding-bottom: 30px;
+  }
+}
+
+a:hover > .desc {
+  text-decoration: none;
+}
+
+.cat a h3 {
+  font-size: 1.7em;
+  line-height: 1;
+  padding-bottom: 0px;
+}
+
+.cat li ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.cat li ul a:not(:last-child)::after {
+  content: ",";
+  text-decoration: none;
+  color: #bcc2d7;
+}
